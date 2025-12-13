@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Style Analyzer Pro - Professional Design Audit Tool</title>
-  <meta name="description" content="Professional Design Audit tool for websites. Immediately analyze all styles and color palette for consistency. Five critical Quality Checks not shown in SEO audits.">
+  <meta name="description" content="Professional Design Audit tool for websites. Immediately analyze all styles and color palette for consistency. Ten critical Quality Checks not shown in SEO audits.">
   <link rel="icon" href="https://intolos.github.io/website-style-analyzer-pro/icon32.png" type="image/png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
   
     html {
-      font-size: 17px !important; /* Stable across GitHub & local */
+      font-size: 18px !important; /* Stable across GitHub & local */
+      /* You can also define a variable for consistency */
+      --base-font-size: 1rem;
     }
 
     * {
@@ -21,7 +22,7 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
-		  font-size: 1.4rem !important;  /* ~20–21px final, readable on all screens */
+		  font-size: 1rem;          /* now 18px base */
       line-height: 1.6;
       color: #2d3748;
       overflow-x: hidden;
@@ -672,29 +673,7 @@
     text-align: left;
     vertical-align: top;
   }
-
-  /* Wider First Column, narrower 2nd, wider 3 & 4 */
-/*  .quality-table th:nth-child(1),
-  .quality-table td:nth-child(1) {
-    width: 22%;
-  }
-
-  .quality-table th:nth-child(2),
-  .quality-table td:nth-child(2) {
-    width: 22%;
-  }
-
-  .quality-table th:nth-child(3),
-  .quality-table td:nth-child(3) {
-    width: 28%;
-  }
-
-  .quality-table th:nth-child(4),
-  .quality-table td:nth-child(4) {
-    width: 28%;
-  }  */
-
-  /* Column Title Size + White Text */
+  
   .quality-table thead th {
     font-size: 1.25rem;
     font-weight: 700;
@@ -831,51 +810,8 @@
 	h3 {
 		font-size: 1.7rem !important;
 	}
-	
-	/* Table typography: fix GitHub shrinking issue */
-	.qc-table th,
-	.qc-table td,
-	.quality-table th,
-	.quality-table td {
-		font-size: 1.05rem !important;  /* readable size */
-	}
-	
-	.qc-table thead th,
-	.quality-table thead th {
-		font-size: 1.25rem !important;
-		font-weight: 700;
-	}
-	
-	h1 { font-size: 65px; font-weight: 700; }
-	h2 { font-size: 52px; font-weight: 700; }
-	h3 { font-size: 41px; font-weight: 700; }
-	h4 { font-size: 33px; font-weight: 600; }
-	h5 { font-size: 26.5px; font-weight: 600; }
-	h6 { font-size: 21.25px; font-weight: 600; }
-	
-	p, li, td, th {
-		font-size: 22px;
-	}
-	small {
-		font-size: 15px;
-	}
 
-	.quality-table th,
-	.quality-table td,
-	.qc-table th,
-	.qc-table td {
-		font-size: 17px !important;
-	}
-	.quality-table th {
-		font-size: 21px !important;
-		font-weight: 700;
-	}
 
-	.qc-icon {
-		font-size: 33px; /* 2 steps above body */
-		vertical-align: middle;
-		margin-right: 8px;
-	}
 
 </style>
 </head>
