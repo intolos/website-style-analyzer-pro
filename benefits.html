@@ -7,6 +7,10 @@
   <meta name="description" content="Professional Design Audit tool for websites. Immediately analyze all styles and color palette for consistency. Five critical Quality Checks not shown in SEO audits.">
   <link rel="icon" href="https://intolos.github.io/website-style-analyzer-pro/icon32.png" type="image/png">
   <style>
+  
+    html {
+      font-size: 17px !important; /* Stable across GitHub & local */
+    }
 
     * {
       margin: 0;
@@ -16,6 +20,7 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+		  font-size: 1.4rem !important;  /* ~20–21px final, readable on all screens */
       line-height: 1.6;
       color: #2d3748;
       overflow-x: hidden;
@@ -813,16 +818,6 @@
 			animation: fadeInDown 1s ease;
   }
 	
-		/* Make font rendering identical across local + GitHub Pages */
-	html {
-		font-size: 18px !important;     /* Previously 16px — now easier to read */
-	}
-	
-	body {
-		font-size: 1.3rem !important;  /* ~20–21px final, readable on all screens */
-		line-height: 1.6;
-	}
-	
 	/* Headings: scale proportionally and consistently */
 	h1, .section-title {
 		font-size: 2.8rem !important;
@@ -848,6 +843,37 @@
 	.quality-table thead th {
 		font-size: 1.25rem !important;
 		font-weight: 700;
+	}
+	
+	h1 { font-size: 65px; font-weight: 700; }
+	h2 { font-size: 52px; font-weight: 700; }
+	h3 { font-size: 41px; font-weight: 700; }
+	h4 { font-size: 33px; font-weight: 600; }
+	h5 { font-size: 26.5px; font-weight: 600; }
+	h6 { font-size: 21.25px; font-weight: 600; }
+	
+	p, li, td, th {
+		font-size: 22px;
+	}
+	small {
+		font-size: 15px;
+	}
+
+	.quality-table th,
+	.quality-table td,
+	.qc-table th,
+	.qc-table td {
+		font-size: 17px !important;
+	}
+	.quality-table th {
+		font-size: 21px !important;
+		font-weight: 700;
+	}
+
+	.qc-icon {
+		font-size: 33px; /* 2 steps above body */
+		vertical-align: middle;
+		margin-right: 8px;
 	}
 
 </style>
